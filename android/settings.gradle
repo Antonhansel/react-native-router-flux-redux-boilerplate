@@ -1,0 +1,3 @@
+rootProject.name = 'Dilema'
+
+include ':app'

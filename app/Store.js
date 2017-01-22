@@ -4,7 +4,6 @@ import { AsyncStorage } from 'react-native';
 import thunk from 'redux-thunk';
 import rootReducer from './Reducer';
 
-const logger = createLogger();
 const middleware = applyMiddleware(thunk);
 
 const Store = autoRehydrate()(createStore)(rootReducer, middleware);

@@ -1,6 +1,5 @@
 import React, {
   Component,
-  PropTypes
 } from 'react';
 
 import {
@@ -11,20 +10,19 @@ import {
 import { connect } from 'react-redux';
 
 import welcomeScreen from './business/welcomeScreen/containerFactory';
-console.log(welcomeScreen);
 
-function mapStateToProps(state) {
+function mapStateToProps() {
   return {}
 }
 
 class Routes extends Component {
   render() {
-  return (
-    <Router hideNavBar={true}>
-      <Scene key="root">
-        <Scene key="welcomeScreen" initial={true} component={welcomeScreen} title="Welcome" type="reset"/>
-      </Scene>
-    </Router>
+    return (
+      <Router hideNavBar={true}>
+        <Scene key="root">
+          <Scene key="welcomeScreen" initial={true} component={welcomeScreen} title="Welcome" type="reset"/>
+        </Scene>
+      </Router>
     );
   }
 }
